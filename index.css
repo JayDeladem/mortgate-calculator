@@ -1,0 +1,206 @@
+ *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #dfe7ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+}
+
+
+.card {
+  display: flex;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+}
+
+/*Left*/
+.form-section {
+  flex: 1;
+  padding: 32px;
+  background: #f7f9fb;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  font-size: 20px;
+}
+
+.header a {
+  font-size: 14px;
+  color: #888;
+}
+
+label {
+  display: block;
+  margin: 16px 0 6px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Input */
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.input-group span {
+  padding: 10px;
+  background: azure;
+  font-size: 14px;
+  font-weight:bold;
+}
+
+.input-group input {
+  border: none;
+  padding: 10px;
+  flex: 1;
+  outline: none;
+}
+
+/* Row */
+.row {
+  display: flex;
+  gap: 16px;
+}
+
+.row > div {
+  flex: 1;
+}
+
+/* Radio */
+.radio-group {
+  margin-top: 10px;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.radio input {
+  margin-right: 10px;
+}
+
+.radio.active {
+  border-color: #cddc39;
+  background: #f3f7d9;
+}
+
+/* Button */
+.btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 25px;
+  background: #cddc39;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size:14px;
+}
+
+/* Right */
+.result-section {
+  flex: 1;
+  padding: 32px;
+  background: #0f2a33;
+  color: #fff;
+  border-radius: 0px 20px 20px 70px;
+}
+
+.result-section h3 {
+  margin-bottom: 10px;
+}
+
+.result-section p {
+  font-size: 14px;
+  color: #bcd0d6;
+  margin-bottom: 20px;
+}
+
+.result-card {
+  background: #132f39;
+  padding: 24px;
+  border-radius: 10px;
+  border-top: 4px solid #cddc39;
+}
+
+.result-card h1 {
+  color: #d4e157;
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.result-card h4 {
+  margin-top: 10px;
+}
+
+.result-card hr {
+  border: none;
+  border-top: 1px solid #2e4b55;
+  margin: 15px 0;
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .form-section,
+  .result-section {
+    padding: 20px;
+  }
+}
+
+
+/* Tablet view */
+@media (min-width: 601px) and (max-width: 992px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .row {
+    flex-direction: row;
+  }
+}
+
+/* Desktop view */
+@media (min-width: 993px) {
+  .card {
+    flex-direction: row;
+  }
+}
